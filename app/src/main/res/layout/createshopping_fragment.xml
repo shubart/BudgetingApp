@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:fillViewport="false"
+        android:background="@drawable/hi">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Create Shopping Budget"
+                android:id="@+id/textView3"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:typeface="serif"
+                android:paddingTop="15dp"
+                android:textColor="#3a0303"
+                style="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+                android:paddingBottom="15dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView3"
+                android:id="@+id/linearLayout2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Budegt Name     :"
+                        android:id="@+id/textView4"
+                        android:background="#11ffffff"
+                        android:textSize="14.5dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/Bnam_et"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="INCOME         K :"
+                        android:id="@+id/textVie45w4"
+                        android:background="#11ffffff"
+                        android:textSize="14.5dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:textStyle="bold"
+                        android:id="@+id/initialAmount_et"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:text="0" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Items"
+                android:id="@+id/textView5"
+                android:textSize="18dp"
+                android:typeface="serif"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_alignEnd="@+id/textView3"
+                android:textColor="#3a0303" />
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/linearLayout3"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="item name   :"
+                        android:id="@+id/itemNameTitle"
+                        android:background="#11ffffff"
+                        android:textSize="14.5dp" />
+
+                    <AutoCompleteTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/itemName_et"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Buy From      :"
+                        android:id="@+id/textView10"
+                        android:background="#11ffffff"
+                        android:textSize="14.5dp" />
+
+                    <AutoCompleteTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:id="@+id/buyfrom_et"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Unit Price K  :"
+                        android:id="@+id/textView7"
+                        android:background="#11ffffff"
+                        android:textSize="14.5dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/unitprice_et"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:onClick="onNBudgetClick"
+                        android:text="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Quantity        :"
+                        android:id="@+id/textView8"
+                        android:background="#11ffffff"
+                        android:textSize="14.5dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/quantity_et"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:onClick="onNBudgetClick"
+                        android:text="1" />
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Item Total K :"
+                        android:id="@+id/textView9"
+                        android:background="#11ffffff"
+                        android:textSize="14.5dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/itemtotal_et"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:text="0"
+                        android:textColor="#1e1717"
+                        android:editable="false"
+                        android:focusable="true"
+                        android:enabled="false" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to Budget"
+                android:id="@+id/addtobudgetbtn"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_alignEnd="@+id/textView3"
+                android:textColor="#a30d0d"
+                android:onClick="onNBudgetClick"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_alignStart="@+id/textView5"
+                android:outlineProvider="bounds"
+                android:background="@drawable/add" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/addtobudgetbtn"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Budget Total K :"
+                        android:id="@+id/textView11"
+                        android:background="#11ffffff"
+                        android:textSize="14.5dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/bugettotal_et"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:enabled="false"
+                        android:text="0"
+                        android:textColor="#1e1717" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Difference     K :"
+                        android:id="@+id/textView13"
+                        android:background="#11ffffff"
+                        android:textSize="14.5dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/difference_et"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:enabled="false"
+                        android:text="0"
+                        android:textColor="#1e1717" />
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Add Notes"
+                        android:id="@+id/textView12"
+                        android:layout_below="@+id/linearLayout2"
+                        android:layout_alignLeft="@+id/textView3"
+                        android:layout_alignStart="@+id/textView3"
+                        android:textSize="18dp"
+                        android:layout_gravity="center_horizontal"
+                        android:typeface="serif"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="#3a0303" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/notes_et"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#6cffffff"
+                        android:textSize="17.5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/textView14" />
+                </LinearLayout>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:targetApi="ice_cream_sandwich">
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Preview"
+                        android:id="@+id/previewbtn"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:textColor="#0e1abd"
+                        android:onClick="onNBudgetClick" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/textView6"
+                        android:layout_row="0"
+                        android:layout_column="4"
+                        android:text="         " />
+
+                    <TextView
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Back"
+                        android:id="@+id/nBBackbtn"
+                        android:textColor="#0e1abd"
+                        android:textSize="14.5dp"
+                        android:layout_row="0"
+                        android:layout_column="9"
+                        android:onClick="onNBudgetClick" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Save  "
+                        android:id="@+id/savebudgetbtn"
+                        android:layout_row="0"
+                        android:layout_column="17"
+                        android:textColor="#0e1abd"
+                        android:onClick="onNBudgetClick" />
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/textView1" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    </LinearLayout>

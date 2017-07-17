@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.myapplicationbudgetapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:label="sBudget"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewShoppingList" />
+        <activity android:name=".SavedBudget" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Papers" />
+        <activity android:name=".PaperPages" />
+        <activity android:name=".NewBudget" />
+        <activity android:name=".GoShopping"></activity>
+    </application>
+
+</manifest>
