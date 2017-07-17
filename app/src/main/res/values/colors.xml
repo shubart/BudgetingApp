@@ -2,5 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#3a0303</color>
+    <color name="TextColorPrimary">#3a0303</color>
+    <color name="paren1linearlyot">#201e1e</color>
 </resources>
